@@ -1,0 +1,1 @@
+A page for a restaurant that uses vanilla JS to create a "tab view" to display different pages without reloading the webpage.
