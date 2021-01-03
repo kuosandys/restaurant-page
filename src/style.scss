@@ -1,9 +1,11 @@
+@import "normalize.css";
+
 $primary: #003811;
 $secondary: #D56638;
 $neutral: #FFDED6;
 $font-primary: "Cereal", "Helvetica Neue", sans-serif;
 $font-secondary: "Andale Mono", "Lucida Console", monospace;
-
+//
 html {
     font-size: 62.5%;
     box-sizing: border-box;
