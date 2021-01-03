@@ -1,0 +1,222 @@
+@import url(normalize.css);
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0 auto;
+  padding: 0 auto; }
+
+body {
+  background-color: white;
+  font-family: "Cereal", "Helvetica Neue", sans-serif;
+  font-size: 2rem; }
+
+#content {
+  background-color: white;
+  padding: 0.5rem;
+  height: auto; }
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem; }
+  header h1 {
+    margin: 0 auto;
+    padding: 1.5rem;
+    cursor: pointer; }
+
+#tab-div {
+  max-width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between; }
+
+.tab-button {
+  width: 49.5%;
+  border: 0.2rem solid #003811;
+  border-radius: 0.25rem;
+  background-color: #003811;
+  font-family: "Andale Mono", "Lucida Console", monospace;
+  font-size: 1.5rem;
+  line-height: 200%;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .tab-button:hover {
+    color: white;
+    background-color: #003811;
+    cursor: pointer; }
+
+#main-div {
+  height: auto;
+  width: 100%;
+  background-color: #FFDED6; }
+
+#home-div {
+  padding-bottom: 0.5rem; }
+  #home-div img {
+    max-width: 100%;
+    display: block;
+    border: 1.5rem solid;
+    border-color: #FFDED6; }
+  #home-div p {
+    background-color: white;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-family: "Andale Mono", "Lucida Console", monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D56638; }
+
+#menu-div {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  align-items: stretch; }
+
+.menu-item {
+  background-color: #FFDED6;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+  .menu-item p {
+    font-style: normal;
+    color: #D56638;
+    font-family: "Andale Mono", "Lucida Console", monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: white;
+    padding: 2%;
+    margin: 0 auto 4% auto; }
+  .menu-item img {
+    width: 100%;
+    height: 35rem;
+    border: 1.5rem solid;
+    border-color: #FFDED6;
+    object-fit: cover; }
+
+#contact-div {
+  border: 1rem solid;
+  border-color: #FFDED6;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 2rem;
+  align-items: center; }
+
+.contact-method {
+  margin: 0;
+  background-color: white;
+  font-family: "Andale Mono", "Lucida Console", monospace;
+  text-transform: uppercase;
+  color: #D56638;
+  text-align: right;
+  justify-self: end; }
+
+.contact-info {
+  font-size: 1.6rem;
+  text-align: left;
+  font-style: italic;
+  width: 100%; }
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: #FFDED6;
+    margin: 0 3rem; }
+  #content {
+    padding: 1.75rem;
+    min-height: 100vh; }
+  header {
+    margin: 0 auto 3rem auto; }
+    header h1 {
+      font-size: 5rem; }
+  #tab-div {
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  .tab-button {
+    line-height: 300%;
+    color: #003811;
+    background-color: white; }
+  #main-div {
+    background-color: white; }
+  #home-div img {
+    border: none;
+    margin-top: 1.5rem; }
+  #menu-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem; }
+  .menu-item {
+    background-color: white; }
+    .menu-item img {
+      border: 1rem solid transparent;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .menu-item p {
+      font-weight: bold;
+      margin: 0 auto 1rem auto; }
+    .menu-item:hover {
+      background-color: #003811; }
+      #menu-div .menu-item:hover p {
+        color: white;
+        background-color: #003811; }
+  #contact-div {
+    margin-top: 2rem;
+    border: none;
+    grid-gap: 3rem; } }
+
+@media screen and (min-width: 800px) {
+  body {
+    margin: 0 10rem; }
+  header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 0;
+    align-items: stretch;
+    justify-items: stretch; }
+    header h1 {
+      margin: 0;
+      font-size: 4.5rem;
+      text-align: left; }
+  #main-div img {
+    width: 75%;
+    object-fit: cover; }
+  #menu-div {
+    width: 75%; }
+  .menu-item {
+    margin: 0; }
+    .menu-item img {
+      border: 2rem 2rem 1rem 2rem solid;
+      border-color: white;
+      width: 100% !important;
+      height: 100%; }
+    .menu-item:hover img {
+      border-color: #003811; }
+  .tab-button {
+    margin: 0.5rem;
+    min-width: 10rem;
+    font-size: 1.6rem; }
+  #menu-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+    grid-gap: 0.5rem; }
+  #contact-div {
+    margin: 10rem;
+    grid-template-columns: 2fr 3fr;
+    border: 0.25rem dotted;
+    border-color: #D56638;
+    padding: 1rem; }
+  .contact-method, .contact-info {
+    font-size: 2rem; } }
